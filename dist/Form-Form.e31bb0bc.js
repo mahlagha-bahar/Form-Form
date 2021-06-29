@@ -29613,7 +29613,7 @@ var FormButtom = function FormButtom() {
       file = eachEntry.file;
 
   var handleButtomChange = function handleButtomChange(e) {
-    setEachEntry(_objectSpread(_objectSpread({}, eachEntry), {}, _defineProperty({}, e.target.name, e.target.value)));
+    setEachEntry(_objectSpread(_objectSpread({}, eachEntry), {}, _defineProperty({}, e.currentTarget.name, e.target.value)));
   };
 
   return /*#__PURE__*/_react.default.createElement("form", {
@@ -29637,7 +29637,7 @@ var FormButtom = function FormButtom() {
     class: "form-control",
     rows: "5",
     id: "comment",
-    name: "text",
+    name: "comment",
     type: "text",
     placeholder: "Comment",
     value: comment,
@@ -29729,7 +29729,7 @@ var FormMiddle = function FormMiddle() {
     class: "form-control",
     id: "pwd",
     placeholder: "Enter password",
-    name: "pswd",
+    name: "password",
     value: password,
     onChange: handleMiddleChange
   }));
@@ -29937,7 +29937,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8019" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11650" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -38,7 +38,7 @@ export const FormMiddle = () => {
         class="form-control"
         id="pwd"
         placeholder="Enter password"
-        name="pswd"
+        name="password"
         value={password}
         onChange={handleMiddleChange}
       />
